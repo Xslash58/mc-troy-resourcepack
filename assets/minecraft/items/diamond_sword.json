@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/diamond_sword"
+        },
+        "entries": [
+            {
+                "threshold": 1450003,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/chilling"
+                }
+            }
+        ]
+    }
+}

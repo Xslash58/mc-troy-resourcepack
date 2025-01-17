@@ -1,0 +1,47 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/netherite_sword"
+        },
+        "entries": [
+            {
+                "threshold": 1450000,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/patron/daybreaker"
+                }
+            },
+            {
+                "threshold": 1450001,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/patron/witherblade"
+                }
+            },
+            {
+                "threshold": 1450003,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/chilling"
+                }
+            },
+            {
+                "threshold": 1450004,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/sacrifice"
+                }
+            },
+            {
+                "threshold": 1450005,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/vampire"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,365 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_false": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/bow"
+            },
+            "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/bow_pulling_0"
+                },
+                "entries": [
+                    {
+                        "threshold": 0.65,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "minecraft:item/bow_pulling_1"
+                        }
+                    },
+                    {
+                        "threshold": 0.9,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "minecraft:item/bow_pulling_2"
+                        }
+                    }
+                ]
+            }
+        },
+        "entries": [
+            {
+                "threshold": 1450104,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/trailblazer"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/trailblazer"
+                        },
+                        "entries": [
+                            {
+                                "threshold": 0.0,
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "incendium:item/trailblazer/pulling_0"
+                                }
+                            },
+                            {
+                                "threshold": 0.65,
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "incendium:item/trailblazer/pulling_1"
+                                }
+                            },
+                            {
+                                "threshold": 0.9,
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "incendium:item/trailblazer/pulling_2"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "threshold": 1450105,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/ragnarok"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/ragnarok"
+                        },
+                        "entries": [
+                            {
+                                "threshold": 0.0,
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "incendium:item/ragnarok/pulling_0"
+                                }
+                            },
+                            {
+                                "threshold": 0.65,
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "incendium:item/ragnarok/pulling_1"
+                                }
+                            },
+                            {
+                                "threshold": 0.9,
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "incendium:item/ragnarok/pulling_2"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "threshold": 1451104,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/trailblazer/pulling_3"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/trailblazer/pulling_3"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1451105,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/ragnarok/pulling_3"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/ragnarok/pulling_3"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1452104,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/trailblazer/pulling_4"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/trailblazer/pulling_4"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1452105,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/ragnarok/pulling_4"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/ragnarok/pulling_4"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1453104,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/trailblazer/pulling_5"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/trailblazer/pulling_5"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1453105,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/ragnarok/pulling_5"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/ragnarok/pulling_5"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1454104,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/trailblazer/pulling_6"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/trailblazer/pulling_6"
+                        },
+                        "entries": []
+                    }
+                }
+            },
+            {
+                "threshold": 1454105,
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "incendium:item/ragnarok/pulling_6"
+                    },
+                    "on_true": {
+                        "type": "minecraft:range_dispatch",
+                        "property": "minecraft:use_duration",
+                        "scale": 0.05,
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "incendium:item/ragnarok/pulling_6"
+                        },
+                        "entries": []
+                    }
+                }
+            }
+        ]
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [
+                -80,
+                260,
+                -40
+            ],
+            "translation": [
+                -1,
+                -2,
+                2.5
+            ],
+            "scale": [
+                0.9,
+                0.9,
+                0.9
+            ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [
+                -80,
+                -280,
+                40
+            ],
+            "translation": [
+                -1,
+                -2,
+                2.5
+            ],
+            "scale": [
+                0.9,
+                0.9,
+                0.9
+            ]
+        },
+        "firstperson_righthand": {
+            "rotation": [
+                0,
+                -90,
+                25
+            ],
+            "translation": [
+                1.13,
+                3.2,
+                1.13
+            ],
+            "scale": [
+                0.68,
+                0.68,
+                0.68
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                0,
+                90,
+                -25
+            ],
+            "translation": [
+                1.13,
+                3.2,
+                1.13
+            ],
+            "scale": [
+                0.68,
+                0.68,
+                0.68
+            ]
+        }
+    }
+}

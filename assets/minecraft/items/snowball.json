@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/snowball"
+        },
+        "entries": [
+            {
+                "threshold": 1450404,
+                "model": {
+                    "type": "model",
+                    "model": "incendium:item/restless"
+                }
+            }
+        ]
+    }
+}
